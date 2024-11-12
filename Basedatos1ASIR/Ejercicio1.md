@@ -10,4 +10,4 @@ La Policía quiere crear una base de datos sobre la seguridad en algunas entidad
 
 **NOTA**: En ningún caso interesa saber si un vigilante ha participado en la detención de un atracador.
 
-![Solución de la imagen](1.png)
+![Solución de la imagen](solucion1.png)
