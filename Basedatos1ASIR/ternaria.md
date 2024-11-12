@@ -76,12 +76,12 @@ En este caso, la relación es **N:N:N**, lo que significa que se puede dar cualq
 
 | Cardinalidad                                         | Valor  |
 |------------------------------------------------------|--------|
-| \((\text{PROFESOR, ASIGNATURA}), \text{IMPARTE}\)    | (0, n) |
-| \((\text{PROFESOR, GRUPO}), \text{IMPARTE}\)         | (0, n) |
-| \((\text{ASIGNATURA, GRUPO}), \text{IMPARTE}\)       | (0, n) |
-| \(\text{PROFESOR, IMPARTE}\)                         | (1, n) |
-| \(\text{ASIGNATURA, IMPARTE}\)                       | (0, n) |
-| \(\text{GRUPO, IMPARTE}\)                            | (1, n) |
+| \(({PROFESOR, ASIGNATURA}), \text{IMPARTE})          | (0, n) |
+| \((\text{PROFESOR, GRUPO}), \text{IMPARTE})          | (0, n) |
+| \((\text{ASIGNATURA, GRUPO}), \text{IMPARTE})        | (0, n) |
+| \(\text{PROFESOR, IMPARTE})                          | (1, n) |
+| \(\text{ASIGNATURA, IMPARTE})                        | (0, n) |
+| \(text{GRUPO, IMPARTE})                              | (1, n) |
+ 
 
-
-![Imagen](ternaria.md)
+![Imagen](ternarias.md)
