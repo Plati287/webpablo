@@ -207,8 +207,8 @@
 
 ## 35. Which storage unit primarily stores long-term data and is non-volatile?
 - A) RAM, as it only stores active
-
  processes
 - B) Cache, used for rapid memory access
 - C) ROM or external hard drive storage
 - D) Address Bus, as a data control line
+## Ahora deberás comprobarlo con las respuestas!
