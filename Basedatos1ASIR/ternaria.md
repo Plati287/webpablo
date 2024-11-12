@@ -26,7 +26,7 @@ Una **relación ternaria** en un diagrama entidad-relación ocurre cuando **tres
 1. **Hospital**: `Doctor`, `Paciente` y `Tratamiento`.
 2. **Universidad**: `Estudiante`, `Curso` y `Profesor`.
 3. **Compañía de envíos**: `Transportista`, `Paquete` y `Ruta`.
--
+
 
 # Casos de Conectividad en Relaciones Ternarias
 
@@ -84,4 +84,4 @@ En este caso, la relación es **N:N:N**, lo que significa que se puede dar cualq
 | \(text{GRUPO, IMPARTE})                              | (1, n) |
  
 
-![Imagen](ternarias.md)
+![Imagen](ternarias.png)
