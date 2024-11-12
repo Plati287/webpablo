@@ -1,25 +1,6 @@
 # Relaciones Ternarias en Diagramas Entidad-Relación
 
-Una **relación ternaria** en un diagrama entidad-relación ocurre cuando **tres entidades participan simultáneamente** en una relación. Estas relaciones se utilizan cuando una situación no puede ser modelada adecuadamente mediante relaciones binarias (entre dos entidades), y es necesario incluir una tercera entidad para representar correctamente la relación.
-
-## ¿Cuándo utilizar una relación ternaria?
-
-1. **Interacción entre tres entidades**: 
-   - Cuando es necesario representar una interacción específica que involucra a tres entidades al mismo tiempo.
-   - Ejemplo: En un sistema de préstamos bancarios, una relación entre `Cliente`, `Banco` y `Préstamo` puede ser ternaria, ya que el préstamo relaciona simultáneamente a un cliente con un banco.
-
-2. **Dependencia de tres entidades**:
-   - Si una relación depende de la presencia de tres entidades para tener sentido.
-   - Ejemplo: En una aplicación de logística, una relación entre `Proveedor`, `Producto` y `Destino` puede ser ternaria si se necesita especificar qué proveedor lleva qué producto a qué destino.
-
-3. **Condiciones de negocio específicas**:
-   - Cuando las reglas del negocio requieren el registro de interacciones complejas.
-   - Ejemplo: En una empresa de servicios de consultoría, puede haber una relación ternaria entre `Consultor`, `Cliente` y `Proyecto` si es necesario registrar qué consultor trabaja en qué proyecto para qué cliente.
-
-## Diferencias entre relaciones binarias y ternarias
-
-- Una **relación binaria** solo involucra dos entidades, y cada instancia de la relación incluye una entidad de cada uno de los dos tipos.
-- En una **relación ternaria**, tres entidades participan simultáneamente, y la combinación de las tres entidades es lo que define cada instancia de la relación.
+## [¡¡¡¡MEJORAR]
 
 ## Ejemplos de relaciones ternarias
 
