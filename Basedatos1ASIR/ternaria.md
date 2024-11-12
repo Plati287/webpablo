@@ -1,13 +1,6 @@
 # Relaciones Ternarias en Diagramas Entidad-Relación
 
-## [¡¡¡¡MEJORAR]
-
-## Ejemplos de relaciones ternarias
-
-1. **Hospital**: `Doctor`, `Paciente` y `Tratamiento`.
-2. **Universidad**: `Estudiante`, `Curso` y `Profesor`.
-3. **Compañía de envíos**: `Transportista`, `Paquete` y `Ruta`.
-
+## incompleto
 
 # Casos de Conectividad en Relaciones Ternarias
 
