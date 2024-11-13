@@ -53,7 +53,7 @@ Each generation of computers brought key advancements in technology, size, cost,
 - **Characteristics**: Compact, highly powerful, and able to perform complex tasks. Continuous advancements in AI, machine learning, voice recognition, and robotics. Designed for interconnectivity and networking, ULSI
 - **Example**: Smartphones, Supercomputers like IBM Watson and Fujitsu’s Fugaku.
 
-```markdown
+
 # Von Neumann Architecture: Essential Concepts
 
 The Von Neumann architecture, introduced by John von Neumann in 1945, is based on the stored-program concept, where instructions and data are stored together in one memory unit. This innovation allows computers to run various programs by simply loading them from memory, unlike early machines (e.g., ENIAC), which needed manual rewiring to change tasks.
