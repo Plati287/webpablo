@@ -175,3 +175,22 @@ Memory in a computer system is organized in a hierarchy based on capacity, acces
 3. **Main Memory (RAM)**: Stores active program instructions and data. It has a larger capacity than cache but operates at a slower speed.
 4. **Secondary Memory**: Provides permanent storage for data and programs. It has much greater capacity than main memory and is non-volatile, though slower. Examples include hard drives (HDD), solid-state drives (SSD), and optical media (CD/DVD).
 
+# Cálculo del Tamaño Máximo de Memoria en Procesadores Intel Core i5-600
+
+Los procesadores Intel Core i5-600 usan un bus de direcciones de 36 bits. Cada celda de memoria almacena 1 byte. Veamos cómo calcular el tamaño máximo de memoria en GiB.
+
+## Paso 1: Calcular el número de direcciones
+- **Fórmula**: \( 2^{36} \)
+- **Resultado**: 68,719,476,736 bytes
+
+## Paso 2: Convertir bytes a GiB
+- **Fórmula**: \( 1 \text{ GiB} = 2^{30} \text{ bytes} \)
+- **Cálculo**:
+  \[
+  \text{Tamaño en GiB} = \frac{68,719,476,736 \text{ bytes}}{2^{30} \text{ bytes/GiB}} = 64 \text{ GiB}
+  \]
+
+## Resultado Final
+El máximo tamaño de memoria que puede manejar es **64 GiB**.
+
+
