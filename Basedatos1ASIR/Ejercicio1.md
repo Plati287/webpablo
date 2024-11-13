@@ -11,3 +11,16 @@ La Policía quiere crear una base de datos sobre la seguridad en algunas entidad
 **NOTA**: En ningún caso interesa saber si un vigilante ha participado en la detención de un atracador.
 
 ![Solución de la imagen](solucion1.png)
+
+# EJERCICIO 2: BALNEARIO
+
+En un hotel-balneario se desea informatizar parte de la gestión relativa a clientes. Tras el análisis realizado, se establecen los siguientes requerimientos:
+
+- Los datos de interés que se desea almacenar del cliente son: DNI, nombre, apellidos y fecha de nacimiento.
+- Un cliente reservará una habitación determinada de una planta del hotel, pudiendo estar a lo largo del tiempo otras veces en el hotel, en diferentes habitaciones y plantas, siendo significativa la fecha de asignación de la habitación y el número de ésta. Habrá que tener en cuenta que las habitaciones se numeran correlativamente por cada planta, es decir, existirá la habitación número 1 de la tercera planta y también la número 1 de la octava planta. Las plantas del hotel estarán identificadas por número de planta, su nombre y número de habitaciones de que dispone. En cada habitación deberemos almacenar el número de personas que caben y cada una puede clasificarse en **SUITE** o **STANDARD**. De la **SUITE** tendrá incluidas gratuitamente una serie de actividades que deberemos almacenar en la base de datos, y como campos el número de jacuzzis que tiene y los m² de espacio que ocupa la habitación. Si es **STANDARD** solo guardaremos si tiene derecho a una cama extra o no y si tiene ducha o bañera.
+- Por cada reserva se puede entregar o no hasta un máximo de 1 tarjeta para poder ocupar el **PARKING** del hotel (si esta se pide o no). Estas tarjetas serán válidas para un único cliente y habitación. La tarjeta se definirá por: número de tarjeta, número de plaza de garaje y si tiene o no trastero. También habrá dos tipos de tarjeta: **PREMIUM** y **NORMAL**. Como se mencionó, para la habitación y cliente puede que no se desee tarjeta alguna.
+- Un cliente puede realizar llamadas a recepción, el hotel quiere controlar estas llamadas para evaluar la eficacia de sus empleados. Será resuelta por un empleado de recepción, queriendo conocer el tiempo de respuesta y la descripción de lo que necesitaba. A su vez, el cliente puede realizar diferentes actividades que requieran de la participación de empleados especializados (excursiones guiadas del hotel, masajes, usar el SPA, regalos, clases de piscina…). A un cliente le deben atender diferentes empleados del hotel o empleados que trabajan para el hotel externamente, contratados para estas actividades especiales. Un empleado del hotel o externo puede atender diferentes tipos de actividades y viceversa, siendo significativa por cada actividad que se realice sobre el cliente la fecha y hora de ésta.
+- Los datos de interés de los empleados del hotel o externos serán: código del empleado, nombre y apellidos y puesto. Los datos de interés de las actividades serán: código de actividad, descripción y precio. Deberemos poder distinguir si es un empleado del hotel, de recepción o no y si es externo o no. (Este es el ejercicio avanzado)
+
+
+![Solucion del ejercicio](solucion2.png)
