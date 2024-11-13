@@ -17,9 +17,9 @@ Each generation of computers brought key advancements in technology, size, cost,
 ### First Generation (1940s - 1950s)
 
 - **Technology**: Used vacuum tubes for circuitry and magnetic drums for memory.
-- **Programming**: Programs were written in machine language and assembly language. Input was primarily through punch cards.
+- **Programming**: Programs were written in machine language. Input was primarily through punch cards.
 - **Characteristics**: Large, heavy, and consumed high amounts of power. Prone to overheating and frequent failures, requiring specialized cooling.
-- **Example**: ENIAC (1945), UNIVAC (1951).
+- **Example computers**: ENIAC (1945), UNIVAC (1951).
 
 ### Second Generation (1950s - 1960s)
 
@@ -27,33 +27,33 @@ Each generation of computers brought key advancements in technology, size, cost,
 - **Programming**: Programs were written in assembly language and high-level languages like COBOL and FORTRAN.
 - **Memory**: Used magnetic core memory for faster data access.
 - **Characteristics**: Reduced size, cost, and heat generation compared to first-generation computers. More reliable and required less power.
-- **Example**: IBM 1401, UNIVAC II.
+- **Example**: IBM 7094, UNIVAC 1108.
 
 ### Third Generation (1960s - 1970s)
 
 - **Technology**: Integrated Circuits (ICs), which placed multiple transistors on a single silicon chip, replaced individual transistors.
-- **Programming**: Supported high-level languages and introduced Operating Systems that allowed multitasking and time-sharing.
-- **Memory**: Magnetic disk storage became more common, providing greater data storage capacity and faster access.
+- **Programming**: Supported high-level (COBOL, PASCAL or BASIC) languages and introduced Operating Systems that allowed multitasking and time-sharing.
+- **Memory**: Magnetic disk storage became more common, providing greater data storage capacity and faster access (semiconductor memory and magnetic disks).
 - **Characteristics**: Smaller, more powerful, and more reliable than previous generations. Significantly reduced cost.
-- **Example**: IBM System/360, UNIVAC 9000.
+- **Example**: IBM 370 and PDP-8
 
 ### Fourth Generation (1970s - 1980s)
 
-- **Technology**: Microprocessors integrated thousands of ICs on a single chip, creating the first microcomputers (personal computers).
-- **Programming**: Supported advanced high-level languages and Graphical User Interfaces (GUIs).
+- **Technology**: Microprocessors integrated thousands of ICs on a single chip, creating the first microcomputers (IBM personal computers).
+- **Programming**: Supported advanced high-level languages and Graphical User Interfaces (GUIs) (C, C++ and DBASE)
 - **Memory**: Introduced semiconductor memory (RAM and ROM), significantly increasing memory efficiency.
-- **Characteristics**: Small, affordable, and accessible for businesses and individuals. Marked the rise of personal computing.
-- **Example**: Apple II, IBM PC (1981).
+- **Characteristics**: Small, affordable, and accessible for businesses and individuals. Marked the rise of personal computing, GUI use operating system and floppy disks
+- **Example**: IBM 4341 nad STAR 1000
 
 ### Fifth Generation (1980s - Present)
 
 - **Technology**: Artificial Intelligence (AI), parallel processing, quantum computing research, and advanced microprocessors.
 - **Programming**: Emphasizes AI technologies, machine learning, and natural language processing.
 - **Memory**: High-speed, large-capacity storage, including solid-state drives (SSDs) and cloud storage.
-- **Characteristics**: Compact, highly powerful, and able to perform complex tasks. Continuous advancements in AI, machine learning, voice recognition, and robotics. Designed for interconnectivity and networking.
+- **Characteristics**: Compact, highly powerful, and able to perform complex tasks. Continuous advancements in AI, machine learning, voice recognition, and robotics. Designed for interconnectivity and networking, ULSI
 - **Example**: Smartphones, Supercomputers like IBM Watson and Fujitsu’s Fugaku.
 
-```markdown
+
 # Von Neumann Architecture: Essential Concepts
 
 The Von Neumann architecture, introduced by John von Neumann in 1945, is based on the stored-program concept, where instructions and data are stored together in one memory unit. This innovation allows computers to run various programs by simply loading them from memory, unlike early machines (e.g., ENIAC), which needed manual rewiring to change tasks.
@@ -85,8 +85,8 @@ Modern CPUs may also include additional components, like cache memory and someti
 - **Instruction Register (IR)**: Register that holds the current instruction, with the operation code and involved data.
 - **Decoder**: Extracts and analyzes the operation code from the current instruction and sends control signals for its execution.
 - **CPU Clock**: Generates regular pulses that set the pace for executing instructions; its speed is measured in hertz (Hz).
-**clock cycle**: is the time between two pulses
-**clock speed**: is the number of pulses per second and measure in herts
+- **clock cycle**: is the time between two pulses
+- **clock speed**: is the number of pulses per second and measure in herts
 - **Sequencer**: Executes machine instructions by creating basic micro-orders in each clock cycle.
 
 ### 3.1.2 Arithmetic and Logic Unit (ALU)
