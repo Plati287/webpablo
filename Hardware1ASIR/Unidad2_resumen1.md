@@ -85,8 +85,6 @@ Modern CPUs may also include additional components, like cache memory and someti
 - **Instruction Register (IR)**: Register that holds the current instruction, with the operation code and involved data.
 - **Decoder**: Extracts and analyzes the operation code from the current instruction and sends control signals for its execution.
 - **CPU Clock**: Generates regular pulses that set the pace for executing instructions; its speed is measured in hertz (Hz).
-- **clock cycle**: is the time between two pulses
-- **clock speed**: is the number of pulses per second and measure in herts
 - **Sequencer**: Executes machine instructions by creating basic micro-orders in each clock cycle.
 
 ### 3.1.2 Arithmetic and Logic Unit (ALU)
