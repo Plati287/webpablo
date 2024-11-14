@@ -108,8 +108,8 @@ Modern CPUs may also include additional components, like cache memory and someti
 2. **Internal Registers**: Used for CPU internal operations, not user-accessible.
    - **Program Counter (PC)**: Holds the address of the next instruction to execute.
    - **Instruction Register (IR)**: Holds the current instruction.
-   - **Memory Address Register (MAR)**: Stores the address for reading or saving data.
-   - **Memory Buffer Register (MBR)**: Holds data being read from or written to memory.
+   - **Memory Address Register (MAR)**: Contiene la direccion para leer o guardar la informacion
+   - **Memory Buffer Register (MBR)**: Extrae los datos y los guarda en la RAM
 
 ## 3.2 Buses
 
@@ -117,9 +117,9 @@ Modern CPUs may also include additional components, like cache memory and someti
 
 ### Types of Buses
 
-- **Data Bus**: Transmits data between the CPU, main memory, and I/O devices. Speed is measured in megahertz (MHz) or gigahertz (GHz). Word size (number of bits transferred simultaneously) is often 64 bits, enabling 8 bytes per clock cycle.
-- **Address Bus**: Carries memory addresses between the CPU and memory for accessing specific locations. A 32-bit address bus, for example, can address 4 GB of memory.
-- **Control Bus**: Sends control signals to coordinate all system activities.
+- **Data Bus**: Permite cambiar datos entre CPU, RAM I/0 y se mide MHz o GHz
+- **Address Bus**: Permite guardar las direcciones de los datos entre CPU y RAM. 
+- **Control Bus**: Controla todas las actividades del ordenador
 
 ## 3.2 Memory Unit
 
@@ -133,8 +133,8 @@ The **Memory Unit** mainly consists of RAM (Random Access Memory) and ROM (Read-
 
 ### Memory Operations
 
-- **Memory Address Register (MAR)**: Stores the address of the memory cell to access.
-- **Memory Buffer Register (MBR)**: Holds data being read/written to memory.
+- **Memory Address Register (MAR)**: Contiene la direccion para leer o guardar la informacion
+- **Memory Buffer Register (MBR)**: Extrae los datos y los guarda en la RAM
 - **Control Unit**: Manages read/write operations by moving data between MAR and MBR.
 
 ## 3.25 Input and Output Unit (I/O Unit)
