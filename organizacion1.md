@@ -9,13 +9,13 @@
 
 
 ## Redes
-1. Resumir Unidad 1. (fecha:)
-2. Resumir Unidad 2. (fecha:)
-3. Resumir Unidad 3. (fecha:)
-4. Resumir Unidad 4. (fecha:)
-5. Resumir Unidad 5. (fecha:)
-6. Resumir Unidad 6. (fecha:)
-7. Resumir Unidaad 7. (fecha:)
+1. Resumir Unidad 1. (fecha: hasta 17/11)
+2. Resumir Unidad 2. (fecha: hasta 17/11)
+3. Resumir Unidad 3. (fecha: hasta 17/11)
+4. Resumir Unidad 4. (fecha: hasta 17/11)
+5. Resumir Unidad 5. (fecha: hasta 17/11)
+6. Resumir Unidad 6. (fecha: hasta 17/11)
+7. Resumir Unidaad 7. (fecha:hasta 17/11)
 
 
 ## Base de datos
