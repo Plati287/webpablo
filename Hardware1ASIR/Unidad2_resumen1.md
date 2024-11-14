@@ -85,7 +85,7 @@ Modern CPUs may also include additional components, like cache memory and someti
 - **Registro de Instrucción (IR)**: Registro que contiene la instrucción actual, con el código de operación y los datos involucrados.
 - **Decodificador**: Extrae y analiza el código de operación de la instrucción actual y envía señales de control para su ejecución.
 - **CPU Clock**: Genera pulsos regulares que marcan el ritmo para ejecutar instrucciones; su velocidad se mide en hercios (Hz).
-- **Secuenciador**: Ejecuta instrucciones de la máquina creando microórdenes básicas en cada ciclo de reloj.
+- **Secuenciador**: encarga de ejecutar la instrucción en código máquina,.
 
 ### 3.1.2 Arithmetic and Logic Unit (ALU)
 
