@@ -19,12 +19,6 @@
 
 
 ## Base de datos
-1. Resumir mediante imagenes U1 (fecha:)
-2. Resumir mediante imagenes U2 (fecha:)
+1. Resumir mediante imagenes U1 (fecha: hasta el 20/11)
+2. Resumir mediante imagenes U2 (fecha: hasta 24/11)
 
-## Lenguaje de marcas
-
-1. Resumir cada etiqueta (fecha:)
-2. Resumir parte 2 etiquetas (fecha:)
-3. Resumir parte 3 etiquetas (fecha:)
-4. Resumir parte 4 etiquetas (fecha:)
