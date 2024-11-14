@@ -81,11 +81,11 @@ Modern CPUs may also include additional components, like cache memory and someti
 
 ### 3.1 Control Unit (CU)
 
-- **Program Counter (PC)**: Register that contains the address of the next instruction to execute.
-- **Instruction Register (IR)**: Register that holds the current instruction, with the operation code and involved data.
-- **Decoder**: Extracts and analyzes the operation code from the current instruction and sends control signals for its execution.
-- **CPU Clock**: Generates regular pulses that set the pace for executing instructions; its speed is measured in hertz (Hz).
-- **Sequencer**: Executes machine instructions by creating basic micro-orders in each clock cycle.
+- **Contador de Programa (PC)**: Registro que contiene la dirección de la siguiente instrucción a ejecutar.
+- **Registro de Instrucción (IR)**: Registro que contiene la instrucción actual, con el código de operación y los datos involucrados.
+- **Decodificador**: Extrae y analiza el código de operación de la instrucción actual y envía señales de control para su ejecución.
+- **CPU Clock**: Genera pulsos regulares que marcan el ritmo para ejecutar instrucciones; su velocidad se mide en hercios (Hz).
+- **Secuenciador**: Ejecuta instrucciones de la máquina creando microórdenes básicas en cada ciclo de reloj.
 
 ### 3.1.2 Arithmetic and Logic Unit (ALU)
 
