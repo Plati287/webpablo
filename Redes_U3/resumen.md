@@ -269,3 +269,104 @@ Los modelos en capas facilitan la comprensión y diseño de redes al dividir sus
   - Detalla el acceso a medios físicos para establecer y mantener conexiones.  
 - **Enlace de datos**:  
   - Enfocada en el envío de datos en la red mediante tramas.
+# 3.6 Encapsulament de dades (Encapsulación de datos)
+
+## Segmentació del missatge (Segmentación del mensaje)
+
+### Segmentación
+- **Definición**: Proceso de dividir los mensajes en unidades más pequeñas.
+- **Multiplexación**: Combina múltiples flujos de datos segmentados en un único flujo.
+
+### Beneficios de la segmentación
+- **Velocidad**: Permite transmitir grandes volúmenes de datos sin bloquear la red.
+- **Eficiencia**: Solo se retransmiten los segmentos perdidos, no el mensaje completo.
+
+## Seqüenciació (Secuenciación)
+- Cada segmento se numera para que el mensaje pueda ensamblarse correctamente en el destino.
+- El protocolo **TCP** es responsable de la secuenciación de los segmentos.
+
+## Unitats de dades del protocol (PDU)
+- La encapsulación consiste en agregar información de protocolo a los datos en cada capa.
+- Las unidades de datos (PDU) cambian de nombre según su función en el modelo:
+  - **Datos**: Corriente de datos en bruto.
+  - **Segmento**: Datos preparados para la capa de transporte.
+  - **Paquete**: Datos encapsulados en la capa de red.
+  - **Trama**: Datos listos para la capa de enlace.
+  - **Bits**: Datos transmitidos físicamente como señales.
+
+## Exemple d'encapsulament (Ejemplo de encapsulación)
+- **Proceso descendente**:  
+  Cada capa procesa los datos y añade su encabezado antes de pasarlos a la siguiente capa, hasta que se envían como una secuencia de bits.
+  # Desencapsulación
+
+La desencapsulación es el proceso mediante el cual los datos ascienden en la pila de protocolos de red en el dispositivo receptor. En cada capa, se elimina el encabezado que se añadió durante la encapsulación antes de pasar los datos al nivel siguiente.
+
+## Etapas
+
+1. **Bits**: Se reciben del medio físico.
+2. **Trama**: La capa de enlace de datos elimina el encabezado de la trama.
+3. **Paquete**: La capa de red quita el encabezado de red.
+4. **Segmento**: La capa de transporte elimina el encabezado del segmento.
+5. **Datos**: La capa de aplicación deja los datos en un formato utilizable.
+# Direcciones de Red
+
+Las capas de enlace de datos y de red utilizan direcciones para garantizar que los datos se entreguen desde el origen hasta el destino.
+
+## Direcciones de la Capa de Red
+
+Son responsables de enviar los paquetes IP desde el dispositivo de origen hasta el dispositivo final, ya sea en la misma red o en una red remota.
+
+## Direcciones de la Capa de Enlace de Datos
+
+Encargadas de enviar la trama desde una tarjeta de interfaz de red (NIC) a otra en la misma red.
+
+## Dirección Lógica de Capa 3
+
+Cada paquete IP contiene dos direcciones IP: una de origen y otra de destino, que pueden estar en la misma red o en una remota.  
+Las direcciones IP se dividen en dos partes:
+- **Parte de red**: Identifica la red.
+- **Parte del host**: Identifica un dispositivo específico dentro de la red.
+
+## Dispositivos en la Misma Red
+
+- En redes locales, los dispositivos comparten la misma porción de red en sus direcciones IP.  
+**Ejemplo**: Dispositivos con IPs 192.168.1.110 (PC1) y 192.168.1.9 (servidor FTP) comparten la misma red.
+
+## Direcciones de la Capa de Enlace de Datos en Redes Locales
+
+- La comunicación en una red Ethernet utiliza direcciones MAC. Estas direcciones son únicas y están integradas físicamente en la NIC Ethernet.  
+- Las direcciones MAC permiten la comunicación directa dentro de la misma red local.
+
+## Dispositivos en Redes Remotas
+
+- Si el destino está en una red diferente, la comunicación requiere el uso de una puerta de enlace predeterminada. Este dispositivo, generalmente un enrutador, maneja el tráfico hacia redes externas.  
+- La capa 3 proporciona la dirección IP de la puerta de enlace predeterminada a la capa 2 para dirigir el tráfico a la red externa adecuada.
+
+## Funcionamiento de la Capa de Enlace de Datos en Redes Remotas
+
+- La dirección MAC cambia con cada salto entre dispositivos, pero la dirección IP permanece constante durante todo el trayecto.  
+- Los datos pasan de un dispositivo a otro a través de la dirección MAC en cada segmento, mientras que las direcciones IP permiten mantener la ruta global.
+# Rol de las Direcciones de la Capa de Enlace de Datos: Diferentes Redes IP
+
+- Cuando el destino final no está en la misma red local, la capa 3 proporciona a la capa 2 la dirección de la puerta de enlace predeterminada. Esto permite a la capa 2 enviar la información al próximo salto en la red, generalmente el enrutador o puerta de enlace.  
+- La puerta de enlace predeterminada es la dirección IP del enrutador que conecta la red local con redes remotas. Es la "puerta" hacia otros destinos que no están en la LAN.
+
+## Direcciones de Enlace de Datos
+
+- El direccionamiento en la capa de enlace de datos es local, lo que significa que cambia en cada segmento o salto de la red, a diferencia de la dirección IP que permanece constante durante todo el trayecto.  
+- En el primer segmento, la dirección MAC de origen será la del dispositivo inicial (PC1) y la de destino será la de la puerta de enlace predeterminada (R1).
+
+## Direcciones de Enlace de Datos (Continuación)
+
+A medida que el paquete avanza, las direcciones MAC cambian con cada salto. Por ejemplo:
+- En el segundo salto, la dirección MAC de origen será la del enrutador que envía el paquete, y la de destino será la del siguiente enrutador o dispositivo de la ruta.
+- El paquete continúa hasta llegar a su destino final, pero el enrutamiento a nivel de la capa de enlace de datos se adapta en cada etapa.
+
+## Direcciones de Enlace de Datos (Último Segmento)
+
+Para el último segmento, la dirección MAC de origen es la del último enrutador que envía el paquete, y la de destino es la del dispositivo final (como el servidor web que recibe la información).
+
+## Direccionamiento Global vs Local
+
+- A lo largo del trayecto, la dirección IP del paquete no cambia, ya que es una dirección global utilizada para identificar el destino final.  
+- Sin embargo, la dirección MAC, que es local a cada segmento, se modifica en cada enlace que cruza el paquete.
