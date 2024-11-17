@@ -237,3 +237,4 @@
 - b) Interoperabilidad.
 - c) Eliminación de capas innecesarias.
 - d) Modelos en capas.
+<!--revisar examen-->
